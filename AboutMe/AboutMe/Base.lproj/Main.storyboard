@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lWM-lH-95j">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Boarding-->
+        <scene sceneID="GLR-4t-VlU">
+            <objects>
+                <viewController id="bff-4p-Nec" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0M3-uk-TBE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I snowboard and wake surf" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONM-9k-ycR">
+                                <rect key="frame" x="105" y="437.5" width="204" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7NN-H0-kXX"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="ONM-9k-ycR" firstAttribute="centerY" secondItem="0M3-uk-TBE" secondAttribute="centerY" id="HLX-MB-3gH"/>
+                            <constraint firstItem="ONM-9k-ycR" firstAttribute="centerX" secondItem="0M3-uk-TBE" secondAttribute="centerX" id="gHF-Fd-PNT"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Boarding" image="snowflake" catalog="system" selectedImage="snowflake.circle.fill" id="St8-OL-Ca8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RJy-L1-8Fj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850.7246376811595" y="79.6875"/>
+        </scene>
+        <!--Traveling-->
+        <scene sceneID="BP7-uu-hbb">
+            <objects>
+                <viewController id="uMq-zS-h98" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ub2-8x-8wa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like to travel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0e-NO-MmY">
+                                <rect key="frame" x="157" y="437.5" width="100" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="33R-dB-Dh7"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstItem="a0e-NO-MmY" firstAttribute="centerX" secondItem="ub2-8x-8wa" secondAttribute="centerX" id="Oiq-mI-TiL"/>
+                            <constraint firstItem="a0e-NO-MmY" firstAttribute="centerY" secondItem="ub2-8x-8wa" secondAttribute="centerY" id="iyW-sA-3QP"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Traveling" image="airplane.circle" catalog="system" selectedImage="airplane.circle.fill" id="neH-ON-o5v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F4G-tg-Zhs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2595.6521739130435" y="79.6875"/>
+        </scene>
+        <!--Workout-->
+        <scene sceneID="w6U-nJ-FHD">
+            <objects>
+                <viewController id="c9s-f7-xBN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9n-G3-5RS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like to workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOb-Jp-joK">
+                                <rect key="frame" x="147.5" y="437.5" width="119" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kq8-l8-XNs"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                        <constraints>
+                            <constraint firstItem="AOb-Jp-joK" firstAttribute="centerX" secondItem="W9n-G3-5RS" secondAttribute="centerX" id="EcH-hP-KUo"/>
+                            <constraint firstItem="AOb-Jp-joK" firstAttribute="centerY" secondItem="W9n-G3-5RS" secondAttribute="centerY" id="o6y-z9-Ogm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Workout" image="star.circle" catalog="system" selectedImage="star.circle.fill" id="LDD-sh-a5A"/>
+                    <navigationItem key="navigationItem" id="ZpH-HN-wK8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3wH-KZ-CXn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3331.884057971015" y="79.6875"/>
+        </scene>
+        <!--Xbox-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I like to play xbox " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYK-nt-c2C">
+                                <rect key="frame" x="140" y="438" width="134" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="XYK-nt-c2C" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7rQ-6C-TOO"/>
+                            <constraint firstItem="XYK-nt-c2C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q95-JH-ZZF"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Xbox" image="gamecontroller" catalog="system" selectedImage="gamecontroller.fill" id="lf4-zl-ZNc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1160.8695652173915" y="64.955357142857139"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="gtw-ph-Q24">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lWM-lH-95j" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="l4A-x3-xQU">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Ylr-dA-U40"/>
+                        <segue destination="bff-4p-Nec" kind="relationship" relationship="viewControllers" id="3q9-SZ-x9I"/>
+                        <segue destination="uMq-zS-h98" kind="relationship" relationship="viewControllers" id="f3G-Na-mUr"/>
+                        <segue destination="c9s-f7-xBN" kind="relationship" relationship="viewControllers" id="b3i-EP-kaI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ku8-MV-fUw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2259" y="-603"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airplane.circle" catalog="system" width="128" height="121"/>
+        <image name="airplane.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="80"/>
+        <image name="snowflake" catalog="system" width="121" height="128"/>
+        <image name="snowflake.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="star.circle" catalog="system" width="128" height="121"/>
+        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
