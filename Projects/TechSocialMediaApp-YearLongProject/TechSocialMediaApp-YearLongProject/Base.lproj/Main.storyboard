@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MfZ-2z-axe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Your Profile-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechSocialMediaApp_YearLongProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wake surfing" translatesAutoresizingMaskIntoConstraints="NO" id="g9i-Ui-JeL">
+                                <rect key="frame" x="20" y="64" width="374" height="248"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="OJ3-NI-FV5"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tech Facts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-qo-eb8">
+                                <rect key="frame" x="50" y="414" width="139" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Is learning to be a mobile developer" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4ex-sY-ujH">
+                                <rect key="frame" x="25" y="486" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I have two uncles that work in the tech industry" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-PV-pFx">
+                                <rect key="frame" x="25" y="557" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="I have toured apple in California" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40d-UD-Rfn">
+                                <rect key="frame" x="25" y="628" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dylan Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="685-vo-f15">
+                                <rect key="frame" x="50" y="340" width="163.5" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GigaChad" translatesAutoresizingMaskIntoConstraints="NO" id="Vti-CN-RDe">
+                                <rect key="frame" x="221" y="299" width="175" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="685-vo-f15" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0k5-EA-Xzb"/>
+                            <constraint firstItem="g9i-Ui-JeL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3dy-FJ-Mub"/>
+                            <constraint firstItem="40d-UD-Rfn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5fT-ro-J3c"/>
+                            <constraint firstItem="UJI-qo-eb8" firstAttribute="top" secondItem="685-vo-f15" secondAttribute="bottom" constant="38" id="Il2-Gg-CNK"/>
+                            <constraint firstItem="40d-UD-Rfn" firstAttribute="top" secondItem="Oug-PV-pFx" secondAttribute="bottom" constant="37" id="NKE-Id-KML"/>
+                            <constraint firstItem="4ex-sY-ujH" firstAttribute="top" secondItem="UJI-qo-eb8" secondAttribute="bottom" constant="36" id="Suh-gc-vDX"/>
+                            <constraint firstItem="UJI-qo-eb8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="VhM-aK-xpW"/>
+                            <constraint firstItem="40d-UD-Rfn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="XdL-Qg-2RI"/>
+                            <constraint firstItem="g9i-Ui-JeL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="acz-lj-c4e"/>
+                            <constraint firstItem="Oug-PV-pFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="eZn-nV-Z0a"/>
+                            <constraint firstItem="4ex-sY-ujH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gQi-1k-tb1"/>
+                            <constraint firstItem="Oug-PV-pFx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j5a-03-p78"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="40d-UD-Rfn" secondAttribute="trailing" constant="25" id="lkt-gD-SCU"/>
+                            <constraint firstItem="685-vo-f15" firstAttribute="top" secondItem="g9i-Ui-JeL" secondAttribute="bottom" constant="28" id="ojq-Mq-hIP"/>
+                            <constraint firstItem="4ex-sY-ujH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="prh-gs-Dgm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4ex-sY-ujH" secondAttribute="trailing" constant="25" id="qm8-Vb-0oX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9i-Ui-JeL" secondAttribute="trailing" constant="20" id="urO-Yn-p6H"/>
+                            <constraint firstItem="Oug-PV-pFx" firstAttribute="top" secondItem="4ex-sY-ujH" secondAttribute="bottom" constant="37" id="wVq-AS-BIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Oug-PV-pFx" secondAttribute="trailing" constant="25" id="zGM-Y8-hTd"/>
+                            <constraint firstItem="g9i-Ui-JeL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="zJi-4S-VPm"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Your Profile" id="577-ld-zM3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486.95652173913049" y="81.696428571428569"/>
+        </scene>
+        <!--Posts-->
+        <scene sceneID="hqh-VD-3Ny">
+            <objects>
+                <viewController id="Be0-71-u6w" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RRy-a9-Rwh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My posts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW3-XY-vVj">
+                                <rect key="frame" x="122" y="74" width="170" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Andriod meme" translatesAutoresizingMaskIntoConstraints="NO" id="2dY-ET-mcu">
+                                <rect key="frame" x="20" y="140" width="374" height="242"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="242" id="eof-Ap-1ZZ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Facts" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D7S-GV-Bdx">
+                                <rect key="frame" x="25" y="413" width="364" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I0C-HC-S5l"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="I0C-HC-S5l" firstAttribute="trailing" secondItem="2dY-ET-mcu" secondAttribute="trailing" constant="20" id="0hR-eT-BFq"/>
+                            <constraint firstItem="I0C-HC-S5l" firstAttribute="trailing" secondItem="D7S-GV-Bdx" secondAttribute="trailing" constant="25" id="NGm-A9-wxJ"/>
+                            <constraint firstItem="2dY-ET-mcu" firstAttribute="leading" secondItem="I0C-HC-S5l" secondAttribute="leading" constant="20" id="Tai-yb-J3d"/>
+                            <constraint firstItem="I0C-HC-S5l" firstAttribute="trailing" secondItem="pW3-XY-vVj" secondAttribute="trailing" constant="122" id="YqG-cW-ojG"/>
+                            <constraint firstItem="D7S-GV-Bdx" firstAttribute="top" secondItem="2dY-ET-mcu" secondAttribute="bottom" constant="31" id="bH0-kK-pKc"/>
+                            <constraint firstItem="pW3-XY-vVj" firstAttribute="leading" secondItem="I0C-HC-S5l" secondAttribute="leading" constant="122" id="mHD-M1-lxo"/>
+                            <constraint firstItem="2dY-ET-mcu" firstAttribute="top" secondItem="pW3-XY-vVj" secondAttribute="bottom" constant="30" id="rMU-kR-rUG"/>
+                            <constraint firstItem="pW3-XY-vVj" firstAttribute="top" secondItem="I0C-HC-S5l" secondAttribute="top" constant="30" id="sGl-mf-ZZH"/>
+                            <constraint firstItem="D7S-GV-Bdx" firstAttribute="leading" secondItem="I0C-HC-S5l" secondAttribute="leading" constant="25" id="tDl-1h-q7K"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Posts" id="jAa-BW-9ft"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buK-0U-FhL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1185.5072463768117" y="81.696428571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Mz7-58-YPW">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="MfZ-2z-axe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z9F-Od-TcG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="ogo-yf-1nl"/>
+                        <segue destination="Be0-71-u6w" kind="relationship" relationship="viewControllers" id="jwV-zd-cgg"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qah-nq-7PK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-270" y="82"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Andriod meme" width="215" height="234"/>
+        <image name="GigaChad" width="299" height="168"/>
+        <image name="Wake surfing" width="275" height="183"/>
+    </resources>
+</document>

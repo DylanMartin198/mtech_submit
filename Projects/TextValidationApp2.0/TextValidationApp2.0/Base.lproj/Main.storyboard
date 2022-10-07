@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextValidationApp2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MqI-j0-1Mo">
+                                <rect key="frame" x="50" y="164" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pbt-vH-tSx">
+                                <rect key="frame" x="50" y="255" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="passwordChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="HEZ-gS-lmx"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rqg-HS-VyH">
+                                <rect key="frame" x="170" y="432.5" width="74" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit " cornerStyle="capsule">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" systemColor="systemYellowColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetForm" destination="BYZ-38-t0r" eventType="touchUpInside" id="WvM-iv-aGm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3FK-7r-qwG">
+                                <rect key="frame" x="50" y="308" width="68" height="20.5"/>
+                                <color key="backgroundColor" red="0.76942896839999997" green="0.049474195429999999" blue="0.095061539259999994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pbt-vH-tSx" secondAttribute="trailing" constant="50" id="1Zz-FA-nAA"/>
+                            <constraint firstItem="Rqg-HS-VyH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ie-x7-R7L"/>
+                            <constraint firstItem="MqI-j0-1Mo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4VM-qm-zi4"/>
+                            <constraint firstItem="Rqg-HS-VyH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5yY-VH-7s2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MqI-j0-1Mo" secondAttribute="trailing" constant="50" id="Aif-dR-klF"/>
+                            <constraint firstItem="3FK-7r-qwG" firstAttribute="top" secondItem="pbt-vH-tSx" secondAttribute="bottom" constant="19" id="GA8-uz-wrV"/>
+                            <constraint firstItem="pbt-vH-tSx" firstAttribute="top" secondItem="MqI-j0-1Mo" secondAttribute="bottom" constant="57" id="JHg-0W-Gyi"/>
+                            <constraint firstItem="MqI-j0-1Mo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="SQ3-E5-81w"/>
+                            <constraint firstItem="3FK-7r-qwG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="WP1-ql-b2C"/>
+                            <constraint firstItem="pbt-vH-tSx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bTe-cP-zmY"/>
+                            <constraint firstItem="MqI-j0-1Mo" firstAttribute="centerX" secondItem="pbt-vH-tSx" secondAttribute="centerX" id="gyd-4C-F5T"/>
+                            <constraint firstItem="pbt-vH-tSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="jRh-5d-Dfh"/>
+                            <constraint firstItem="MqI-j0-1Mo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="rtE-Ot-HiR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Password" destination="pbt-vH-tSx" id="Dp9-6x-qgz"/>
+                        <outlet property="PasswordError" destination="3FK-7r-qwG" id="ykz-ko-CAX"/>
+                        <outlet property="Submit" destination="Rqg-HS-VyH" id="KSy-ur-jte"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.652173913043484" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
