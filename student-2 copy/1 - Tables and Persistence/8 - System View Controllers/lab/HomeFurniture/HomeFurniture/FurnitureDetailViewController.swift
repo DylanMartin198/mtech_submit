@@ -41,9 +41,9 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
     @IBAction func actionButtonTapped(_ sender: UIButton) {
         guard let image = photoImageView.image else { return }
         let activityController = UIActivityViewController(activityItems: [image, " "], applicationActivities: nil)
-        
         activityController.popoverPresentationController?.sourceView = sender
         present(activityController, animated: true)
+        
     }
     
     @IBAction func choosePhotoButtonTapped(_ sender: UIButton) {
@@ -77,8 +77,15 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
         present(alertController, animated: true)
         
         
-        if let image = photoImageView.image, let _ = image.jpegData(compressionQuality: 0.9){
+        if let image = photoImageView.image?.jpegData(compressionQuality: 0.9) {
             updateView()
+        }
+        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+            guard let selectedImage = info[.originalImage] as? UIImage else { return }
+            
+            photoImageView.image = selectedImage
+            
+            dismiss(animated: true)
         }
     }
 }
