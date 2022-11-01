@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nV3-Be-KM5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nV3-Be-KM5">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,93 +17,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEV-5I-Sw4">
-                                <rect key="frame" x="76" y="136" width="50.5" height="31"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Dad"/>
-                                <connections>
-                                    <segue destination="a0o-2Y-r5v" kind="show" id="2ca-HE-HDI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-gm-Kyg">
-                                <rect key="frame" x="235.5" y="136" width="56.5" height="31"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Mom"/>
-                                <connections>
-                                    <segue destination="7QR-ac-jz9" kind="show" id="03y-ir-0GM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-K6-C6T">
-                                <rect key="frame" x="76" y="219" width="82.5" height="31"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Brother1 "/>
-                                <connections>
-                                    <segue destination="FZi-6n-yoD" kind="show" id="Nqm-BO-bim"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOn-yS-ioP">
-                                <rect key="frame" x="237.5" y="219" width="61.5" height="31"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" systemColor="labelColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Sister"/>
-                                <connections>
-                                    <segue destination="RCX-7t-SUf" kind="show" id="7WX-OW-P2z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-fY-FcG">
-                                <rect key="frame" x="76" y="328" width="44" height="35"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Me"/>
-                                <connections>
-                                    <segue destination="yit-Ln-96v" kind="show" id="TdH-F4-h8P"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziC-UX-vTe">
-                                <rect key="frame" x="200" y="328" width="80.5" height="35"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Brother2"/>
-                                <connections>
-                                    <segue destination="eLj-cq-V1W" kind="show" id="d9c-C3-DEI"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="dgp-9l-MPx">
+                                <rect key="frame" x="20" y="112" width="374" height="730"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEV-5I-Sw4">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="116"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Dad"/>
+                                        <connections>
+                                            <segue destination="a0o-2Y-r5v" kind="show" id="2ca-HE-HDI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AbU-gm-Kyg">
+                                        <rect key="frame" x="0.0" y="123" width="374" height="115.5"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Mom "/>
+                                        <connections>
+                                            <segue destination="7QR-ac-jz9" kind="show" id="03y-ir-0GM"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOU-K6-C6T">
+                                        <rect key="frame" x="0.0" y="245.5" width="374" height="116"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Brother1 "/>
+                                        <connections>
+                                            <segue destination="FZi-6n-yoD" kind="show" id="Nqm-BO-bim"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aOn-yS-ioP">
+                                        <rect key="frame" x="0.0" y="368.5" width="374" height="116"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sister"/>
+                                        <connections>
+                                            <segue destination="RCX-7t-SUf" kind="show" id="7WX-OW-P2z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ziC-UX-vTe">
+                                        <rect key="frame" x="0.0" y="491.5" width="374" height="115.5"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Brother2"/>
+                                        <connections>
+                                            <segue destination="eLj-cq-V1W" kind="show" id="d9c-C3-DEI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBW-fY-FcG">
+                                        <rect key="frame" x="0.0" y="614" width="374" height="116"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Me"/>
+                                        <connections>
+                                            <segue destination="yit-Ln-96v" kind="show" id="TdH-F4-h8P"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="aOn-yS-ioP" secondAttribute="trailing" id="5Kr-SY-5iJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="aOU-K6-C6T" secondAttribute="trailing" id="DsF-Mw-So7"/>
+                                    <constraint firstItem="ziC-UX-vTe" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="LJ3-nN-xuK"/>
+                                    <constraint firstItem="PEV-5I-Sw4" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="SBl-Yu-njz"/>
+                                    <constraint firstItem="tBW-fY-FcG" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="Vyw-re-ie6"/>
+                                    <constraint firstAttribute="trailing" secondItem="PEV-5I-Sw4" secondAttribute="trailing" id="Wyf-Yc-D6b"/>
+                                    <constraint firstItem="aOU-K6-C6T" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="ZEr-BI-Ik9"/>
+                                    <constraint firstItem="AbU-gm-Kyg" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="blU-hM-tIC"/>
+                                    <constraint firstAttribute="trailing" secondItem="tBW-fY-FcG" secondAttribute="trailing" id="dzl-nx-vm1"/>
+                                    <constraint firstAttribute="trailing" secondItem="AbU-gm-Kyg" secondAttribute="trailing" id="hqf-rk-FE8"/>
+                                    <constraint firstAttribute="trailing" secondItem="ziC-UX-vTe" secondAttribute="trailing" id="sFB-jf-Fn9"/>
+                                    <constraint firstItem="aOn-yS-ioP" firstAttribute="leading" secondItem="dgp-9l-MPx" secondAttribute="leading" id="v6i-5z-OVR"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TNZ-zm-3Fg"/>
                         <color key="backgroundColor" systemColor="systemMintColor"/>
                         <accessibility key="accessibilityConfiguration" identifier="Whole Family"/>
                         <constraints>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="bottom" secondItem="aOn-yS-ioP" secondAttribute="bottom" constant="612" id="1Bw-UW-Q4E"/>
-                            <constraint firstItem="aOU-K6-C6T" firstAttribute="top" secondItem="PEV-5I-Sw4" secondAttribute="bottom" constant="52" id="4B0-8m-i2t"/>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="bottom" secondItem="tBW-fY-FcG" secondAttribute="bottom" constant="499" id="4jt-yW-tpI"/>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="trailing" secondItem="aOn-yS-ioP" secondAttribute="trailing" constant="115" id="4u8-iF-T1l"/>
-                            <constraint firstItem="tBW-fY-FcG" firstAttribute="top" secondItem="aOU-K6-C6T" secondAttribute="bottom" constant="78" id="E1L-F2-5ZZ"/>
-                            <constraint firstItem="aOn-yS-ioP" firstAttribute="top" secondItem="AbU-gm-Kyg" secondAttribute="bottom" constant="52" id="M2O-3S-6VX"/>
-                            <constraint firstItem="tBW-fY-FcG" firstAttribute="top" secondItem="ziC-UX-vTe" secondAttribute="top" id="Nsu-Lx-6LN"/>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="bottom" secondItem="aOU-K6-C6T" secondAttribute="bottom" constant="612" id="RCC-1f-ggk"/>
-                            <constraint firstItem="tBW-fY-FcG" firstAttribute="leading" secondItem="aOU-K6-C6T" secondAttribute="leading" id="UpF-tc-weV"/>
-                            <constraint firstItem="tBW-fY-FcG" firstAttribute="bottom" secondItem="ziC-UX-vTe" secondAttribute="bottom" id="W66-fL-jM5"/>
-                            <constraint firstItem="AbU-gm-Kyg" firstAttribute="leading" secondItem="PEV-5I-Sw4" secondAttribute="trailing" constant="109" id="WNi-Hr-nTi"/>
-                            <constraint firstItem="aOn-yS-ioP" firstAttribute="top" secondItem="AbU-gm-Kyg" secondAttribute="bottom" constant="52" id="X5B-Kh-SsE"/>
-                            <constraint firstItem="PEV-5I-Sw4" firstAttribute="leading" secondItem="TNZ-zm-3Fg" secondAttribute="leading" constant="76" id="bdv-7v-fx7"/>
-                            <constraint firstItem="AbU-gm-Kyg" firstAttribute="leading" secondItem="PEV-5I-Sw4" secondAttribute="trailing" constant="109" id="e0V-Dh-bLH"/>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="trailing" secondItem="AbU-gm-Kyg" secondAttribute="trailing" constant="122" id="m0g-y6-fdo"/>
-                            <constraint firstItem="aOU-K6-C6T" firstAttribute="leading" secondItem="TNZ-zm-3Fg" secondAttribute="leading" constant="76" id="nzu-fL-Tq2"/>
-                            <constraint firstItem="AbU-gm-Kyg" firstAttribute="top" secondItem="TNZ-zm-3Fg" secondAttribute="top" constant="48" id="r1H-dA-y8h"/>
-                            <constraint firstItem="aOn-yS-ioP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aOU-K6-C6T" secondAttribute="trailing" constant="8" symbolic="YES" id="rFX-s4-Jqx"/>
-                            <constraint firstItem="PEV-5I-Sw4" firstAttribute="top" secondItem="TNZ-zm-3Fg" secondAttribute="top" constant="48" id="rtW-wX-XD7"/>
-                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="trailing" secondItem="ziC-UX-vTe" secondAttribute="trailing" constant="133.5" id="rwr-FW-OJx"/>
-                            <constraint firstItem="ziC-UX-vTe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tBW-fY-FcG" secondAttribute="trailing" symbolic="YES" id="t8o-oC-Tus"/>
-                            <constraint firstItem="aOU-K6-C6T" firstAttribute="top" secondItem="PEV-5I-Sw4" secondAttribute="bottom" constant="52" id="wiQ-54-TSM"/>
+                            <constraint firstItem="dgp-9l-MPx" firstAttribute="top" secondItem="TNZ-zm-3Fg" secondAttribute="top" constant="20" id="Dgp-kx-rFx"/>
+                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="bottom" secondItem="dgp-9l-MPx" secondAttribute="bottom" constant="20" id="FBa-fh-ToD"/>
+                            <constraint firstItem="dgp-9l-MPx" firstAttribute="leading" secondItem="TNZ-zm-3Fg" secondAttribute="leading" constant="20" id="VIw-pG-ogV"/>
+                            <constraint firstItem="TNZ-zm-3Fg" firstAttribute="trailing" secondItem="dgp-9l-MPx" secondAttribute="trailing" constant="20" id="lqZ-aV-oLE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Whole Family" id="cBc-7y-aOi">
@@ -127,16 +129,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Seige" translatesAutoresizingMaskIntoConstraints="NO" id="OUE-AQ-U2t">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="Seige" translatesAutoresizingMaskIntoConstraints="NO" id="OUE-AQ-U2t">
                                 <rect key="frame" x="87" y="536" width="240" height="225"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I enjoy playing xbox, snowboarding, wake surfing, and working out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5c-i1-FBN">
-                                <rect key="frame" x="20" y="143" width="374" height="107.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="I enjoy playing xbox and working out" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5c-i1-FBN">
+                                <rect key="frame" x="20" y="147" width="374" height="103.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Weight Lifting" translatesAutoresizingMaskIntoConstraints="NO" id="Hwt-mj-ynw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="Weight Lifting" translatesAutoresizingMaskIntoConstraints="NO" id="Hwt-mj-ynw">
                                 <rect key="frame" x="87" y="288.5" width="240" height="168"/>
                             </imageView>
                         </subviews>
@@ -172,13 +174,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my dad he likes fire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAL-bC-OgG">
-                                <rect key="frame" x="25" y="138" width="364" height="36"/>
+                                <rect key="frame" x="25" y="142" width="364" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="John wick" translatesAutoresizingMaskIntoConstraints="NO" id="Mn9-tC-j89">
-                                <rect key="frame" x="87" y="219" width="240" height="128"/>
+                                <rect key="frame" x="87" y="223" width="240" height="124"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WWIIflame" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-4h-KqC">
                                 <rect key="frame" x="87" y="448" width="240" height="128"/>
@@ -218,19 +220,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gut-jh-haq">
-                                <rect key="frame" x="186" y="137" width="0.0" height="0.0"/>
+                                <rect key="frame" x="186" y="141" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my mom and she likes interior design" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccH-Mc-ykX">
-                                <rect key="frame" x="25" y="138" width="364" height="72"/>
+                                <rect key="frame" x="25" y="142" width="364" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="John Wick wife" translatesAutoresizingMaskIntoConstraints="NO" id="Qyb-Lb-vRJ">
-                                <rect key="frame" x="87" y="208" width="240" height="124"/>
+                                <rect key="frame" x="87" y="212" width="240" height="120"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Couch" translatesAutoresizingMaskIntoConstraints="NO" id="Zb6-P7-xHM">
                                 <rect key="frame" x="87" y="443" width="240" height="128"/>
@@ -273,13 +275,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my brother he snowboards" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0bx-ZI-Hp7">
-                                <rect key="frame" x="25" y="138" width="364" height="72"/>
+                                <rect key="frame" x="25" y="142" width="364" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="personsnowboarding" translatesAutoresizingMaskIntoConstraints="NO" id="vxJ-Y7-GVA">
-                                <rect key="frame" x="87" y="220" width="240" height="128"/>
+                                <rect key="frame" x="87" y="224" width="240" height="124"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snowboard" translatesAutoresizingMaskIntoConstraints="NO" id="1Ul-PO-IkS">
                                 <rect key="frame" x="87" y="458" width="240" height="128"/>
@@ -319,13 +321,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my sister and she is married and teaching english in India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSo-Al-VGl">
-                                <rect key="frame" x="25" y="138" width="364" height="107.5"/>
+                                <rect key="frame" x="25" y="142" width="364" height="107.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sister" translatesAutoresizingMaskIntoConstraints="NO" id="hz9-tU-3Gp">
-                                <rect key="frame" x="87" y="240" width="240" height="128"/>
+                                <rect key="frame" x="87" y="244" width="240" height="124"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="indianflag" translatesAutoresizingMaskIntoConstraints="NO" id="IFT-PY-qfJ">
                                 <rect key="frame" x="87" y="453" width="240" height="128"/>
@@ -365,13 +367,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is my other brother and he is an artist " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kyd-pp-xlP">
-                                <rect key="frame" x="25" y="138" width="364" height="72"/>
+                                <rect key="frame" x="25" y="142" width="364" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="mona lisa" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-mh-FwA">
-                                <rect key="frame" x="87" y="241" width="240" height="128"/>
+                                <rect key="frame" x="87" y="245" width="240" height="124"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brother2 " translatesAutoresizingMaskIntoConstraints="NO" id="euE-0w-7PD">
                                 <rect key="frame" x="87" y="444" width="240" height="128"/>
@@ -408,7 +410,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nV3-Be-KM5" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tjx-PP-mUe">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -424,8 +426,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="7WX-OW-P2z"/>
         <segue reference="Nqm-BO-bim"/>
-        <segue reference="03y-ir-0GM"/>
-        <segue reference="2ca-HE-HDI"/>
+        <segue reference="U3f-gY-ygm"/>
+        <segue reference="vvn-Rt-GaC"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Couch" width="310" height="163"/>
@@ -441,7 +443,7 @@
         <image name="personsnowboarding" width="305" height="165"/>
         <image name="sister" width="275" height="183"/>
         <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

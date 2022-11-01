@@ -12,7 +12,10 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
     @IBOutlet var employeeTypeLabel: UILabel!
     @IBOutlet var saveBarButtonItem: UIBarButtonItem!
     
-    weak var delegate: EmployeeDetailTableViewControllerDelegate?
+    @IBOutlet weak var dobDatePicker: UIDatePicker!
+    weak var delegate:
+    
+    EmployeeDetailTableViewControllerDelegate?
     var employee: Employee?
     
     override func viewDidLoad() {
@@ -20,6 +23,13 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
         
         updateView()
         updateSaveButtonState()
+    }
+    
+    var isEditingBirthday: Bool = false {
+        didSet {
+            tableView.beginUpdates()
+            tableView.endUpdates()
+        }
     }
     
     func updateView() {
@@ -56,6 +66,13 @@ class EmployeeDetailTableViewController: UITableViewController, UITextFieldDeleg
 
     @IBAction func nameTextFieldDidChange(_ sender: UITextField) {
         updateSaveButtonState()
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        switch indexPath {
+        case isEditingBirthdayindexPath where isEditingBirthday == false: return 0
+        default: return UITableView.automaticDimension
+        }
     }
 
 }
