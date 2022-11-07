@@ -1,9 +1,6 @@
 import UIKit
 
-func removeSpaces(str: String) -> String {
-    for spaces in str {
-        var spaces = " "
-        
-    }
-    return str
+func removeSpaces(string: String) -> String {
+    return string.replacingOccurrences(of: " ", with: "")
 }
+removeSpaces(string: "Hello world")

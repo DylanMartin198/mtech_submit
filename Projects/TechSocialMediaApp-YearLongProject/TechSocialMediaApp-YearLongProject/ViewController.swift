@@ -9,11 +9,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var family: FamilyMember?
+    
+    @IBOutlet weak var postImageView: UIImageView!
+    
+    @IBOutlet weak var postTextView: UITextView!
+    
+    
     override func viewDidLoad() {
+        guard let family = family else {
+            fatalError()
+        }
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        postTextView.text = family.hobbys
+        postImageView.image = UIImage(named: family.imageName)
     }
-
-
 }
 

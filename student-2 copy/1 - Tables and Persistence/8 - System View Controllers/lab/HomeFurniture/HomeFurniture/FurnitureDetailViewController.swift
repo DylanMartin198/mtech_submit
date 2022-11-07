@@ -28,7 +28,7 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
     func updateView() {
         guard let furniture = furniture else {return}
         if let imageData = furniture.imageData,
-            let image = UIImage(data: imageData) {
+           let image = UIImage(data: imageData) {
             photoImageView.image = image
         } else {
             photoImageView.image = nil
@@ -58,17 +58,17 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
         
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
-        let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
-            imagePicker.sourceType = .camera
-            self.present(imagePicker, animated: true)
+            let cameraAction = UIAlertAction(title: "Camera", style: .default) { _ in
+                imagePicker.sourceType = .camera
+                self.present(imagePicker, animated: true)
             }
             alertController.addAction(cameraAction)
         }
         
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary){
-        let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
-            imagePicker.sourceType = .photoLibrary
-            self.present(imagePicker, animated: true)
+            let photoLibraryAction = UIAlertAction(title: "Photo Library", style: .default) { _ in
+                imagePicker.sourceType = .photoLibrary
+                self.present(imagePicker, animated: true)
             }
             alertController.addAction(photoLibraryAction)
         }
@@ -76,20 +76,19 @@ class FurnitureDetailViewController: UIViewController, UIImagePickerControllerDe
         
         present(alertController, animated: true)
         
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[.originalImage] as? UIImage else { return }
         
-        if let image = photoImageView.image?.jpegData(compressionQuality: 0.9) {
+        photoImageView.image = selectedImage
+        
+        furniture?.imageData =  photoImageView.image?.jpegData(compressionQuality: 0.9)
             updateView()
-        }
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-            guard let selectedImage = info[.originalImage] as? UIImage else { return }
-            
-            photoImageView.image = selectedImage
-            
-            dismiss(animated: true)
-        }
+        
+        dismiss(animated: true)
+        
     }
 }
-        
         
 //        let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 //

@@ -75,8 +75,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Lzx-Fs-aeH"/>
                     <connections>
-                        <outlet property="bodyImageView" destination="ibW-li-tyX" id="WLk-Ip-CL6"/>
-                        <outlet property="bodyTextView" destination="mTA-zR-IoC" id="E3H-NN-7cf"/>
+                        <outlet property="bodyImageView" destination="ibW-li-tyX" id="FBq-jb-XLN"/>
+                        <outlet property="bodyTextView" destination="mTA-zR-IoC" id="LWI-4K-GAq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
