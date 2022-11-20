@@ -6,17 +6,21 @@
 //
 
 import Foundation
+import UIKit
 
-struct FamilyMember {
-    var name: String
-    var hobbys: String
+struct Posts {
+    var comment: String
     var imageName: String
     
-    static var familyMembers: [FamilyMember] = [
-        FamilyMember(name: "Dad", hobbys: "Likes fire", imageName: "John wick"),
-        FamilyMember(name: "Mom", hobbys: "Likes Interior design", imageName: "Couch"),
-        FamilyMember(name: "Sister", hobbys: "She is teaching english in India", imageName: "indianflag"),
-        FamilyMember(name: "Brother1", hobbys: "Snowboards", imageName: "Snowboard"),
-        FamilyMember(name: "Brother2", hobbys: "Is an artist", imageName: "mona lisa"),
-        FamilyMember(name: "Me", hobbys: "Likes to play video games", imageName: "Seige")]
+    static var posts: [Posts] = [
+        Posts(comment: "Unit", imageName: "GigaChad"),
+        Posts(comment: "Average andriod user", imageName: "Andriod meme"),
+        Posts(comment: "Me", imageName: "DeveloperMeme"),
+        Posts(comment: "Darth Vader", imageName: "DarthVader"),
+        Posts(comment: "Favorite Lift", imageName: "BenchPress"),
+        Posts(comment: "Favorite food", imageName: "Chicken"),
+        Posts(comment: "Best candy", imageName: "SnickersBar"),
+        Posts(comment: "I can do a 360", imageName: "Snowboarding"),
+        Posts(comment: "I like ice cream", imageName: "IceCream"),
+        Posts(comment: "Favorite summer activity", imageName: "Wakesurfing")]
 }

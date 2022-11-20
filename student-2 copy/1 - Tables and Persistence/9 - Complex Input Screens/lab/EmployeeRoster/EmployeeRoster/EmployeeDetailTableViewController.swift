@@ -112,10 +112,9 @@ class EmployeeDetailTableViewController: UITableViewController, EmployeeTypeTabl
         guard let currentYear = dateComponents.year else {
             return
         }
-        
-        dateComponents.month = 6
-        dateComponents.day = 15
-        dateComponents.year = (currentYear - 40)
+        dateComponents.month = 1
+        dateComponents.day = 1
+        dateComponents.year = (currentYear - 16)
         
         dobDatePicker.date = dateComponents.date ?? Date()
     }
