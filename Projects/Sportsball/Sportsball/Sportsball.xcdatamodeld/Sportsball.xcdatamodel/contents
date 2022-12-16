@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A380" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Game" representedClassName="Game" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="team" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Team"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="identiferPlayer" optional="YES" attributeType="String"/>
+        <attribute name="jersey" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="team" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="players" inverseEntity="Team"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" optional="YES" attributeType="String"/>
+        <attribute name="location" optional="YES" attributeType="String"/>
+        <attribute name="logoImage" optional="YES" attributeType="URI"/>
+        <attribute name="teamColors" optional="YES" attributeType="String"/>
+        <attribute name="teamName" optional="YES" attributeType="String"/>
+        <relationship name="players" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Player" inverseName="team" inverseEntity="Player"/>
+    </entity>
+</model>

@@ -3,16 +3,28 @@
 
  Using the code below, use the `map` function to create an array of `Int` values, whose values are equal to the original integer value, plus 1. Use `$0` as you iterate through the values of the array. Print the resulting collection.
  */
-let testScores = [65, 80, 88, 90, 47]
+struct Test {
+    var testScore: Int
+}
 
+let testScores = [65, 80, 88, 90, 47]
+let testScoresSyntacticSugar = testScores.map { Test(testScore: $0) }
+print(testScoresSyntacticSugar)
 
 //:  Using the code below, use the `filter` function to create a new array of `String` values. The new array should only include Strings longer than four characters. Use `$0` as you iterate through the values of the array.  Print the resulting collection.
 let schoolSubjects = ["Math", "Computer Science", "Gym", "English", "Biology"]
 
+let newArray = schoolSubjects.filter { (schoolSubjects) -> Bool in
+    return Int(schoolSubjects) ?? 0 >= 4
+}
 
 //:  Using the code below, use the `reduce` function to subtract all of the values within the array from the starting value 100. Print the resulting value.
-let damageTaken = [25, 10, 15, 30, 20]
+struct Damage {
+    var damageTaken: [Int]
+}
 
+let damageTaken = [25, 10, 15, 30, 20]
+let currentHealth = damageTaken.reduce(0) { $0 + $1 }
 
 /*:
  _Copyright © 2021 Apple Inc._
