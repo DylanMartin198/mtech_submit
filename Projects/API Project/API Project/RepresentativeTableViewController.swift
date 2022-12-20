@@ -32,9 +32,9 @@ class RepresentativeTableViewController: UITableViewController {
         if !searchTerm.isEmpty {
             
             let query = [
-                "results": "name",
-                "results": "party",
-                "results": "link"
+                "name": " ",
+                "party": " ",
+                "link": " "
             ]
             
             Task {

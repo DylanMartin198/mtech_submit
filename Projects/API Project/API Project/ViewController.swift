@@ -8,20 +8,15 @@
 import UIKit
 
     
-class ViewController: UIViewController, PhotoControllerDelegate {
-    func fetchPhotoInfo() {
-    }
-    
-    func fetchImage(from url: URL) {
-    }
-    
+class ViewController: UIViewController {
+   
     @IBOutlet weak var dogImage: UIImageView!
     
     @IBAction func NewDogPressed(_ sender: Any) {
         Task {
-//            let response = try await fetchPhotoInfo()
-//            let image = try await fetchImage(from: URL(string: response.message)!)
-//            dogImage.image = image
+            let response = try await PhotoController.fetchPhotoInfo()
+            let image = try await PhotoController.fetchImage(from: response.message)
+            dogImage.image = image
         }
     }
     
@@ -34,6 +29,7 @@ class ViewController: UIViewController, PhotoControllerDelegate {
         Task {
             do {
                 let photoInfo = try await PhotoController.fetchPhotoInfo()
+                updateUI(with: photoInfo)
             } catch {
                 self.dogImage.image = UIImage(systemName: "exclamationmark.octagon")
             }
@@ -42,7 +38,7 @@ class ViewController: UIViewController, PhotoControllerDelegate {
         func updateUI(with photoInfo: PhotoInfo) {
             Task {
                 do {
-                    let image = try await PhotoController.fetchImage(from: photoInfo.url)
+                    let image = try await PhotoController.fetchImage(from: photoInfo.message)
                     dogImage.image = image
                 } catch {
                     updateUI(with: error)

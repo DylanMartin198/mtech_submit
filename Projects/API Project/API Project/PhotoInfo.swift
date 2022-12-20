@@ -8,13 +8,9 @@
 import Foundation
 
 struct PhotoInfo: Codable {
-    var url: URL
-    var message: String
-     var response: String
+    var message: URL
     
     enum CodingKeys: String, CodingKey {
-        case url
         case message
-        case response
     }
 }
