@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct MenuItem: Codable {
     var id: Int
@@ -23,4 +24,5 @@ struct MenuItem: Codable {
         case category
         case imageURL = "image_url"
     }
+    
 }

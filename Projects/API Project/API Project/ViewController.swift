@@ -12,11 +12,16 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var dogImage: UIImageView!
     
-    @IBAction func NewDogPressed(_ sender: Any) {
+    @IBAction func newDogPressed(_ sender: Any) {
         Task {
-            let response = try await PhotoController.fetchPhotoInfo()
-            let image = try await PhotoController.fetchImage(from: response.message)
-            dogImage.image = image
+            do {
+                let response = try await PhotoController.fetchPhotoInfo()
+                let image = try await PhotoController.fetchImage(from: response.message)
+                dogImage.image = image
+            } catch {
+                print(error)
+            }
+            
         }
     }
     

@@ -10,15 +10,21 @@ import Foundation
 struct Representative: Codable {
     var name: String
     var party: String
-    var link: URL
+    var link: String
     
-//    init(from decoder: Decoder) throws {
-//        let container = try decoder.container(keyedBy: CodingKeys.self)
-//        self.name = try container.decode(String.self, forKey: .name)
-//        self.party = try container.decode(String.self, forKey: try)
-//        self.link = try container.decode(URL.self, forKey: try)
-//        }
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.name = try container.decode(String.self, forKey: .name)
+        self.party = try container.decode(String.self, forKey: .party)
+        self.link = try container.decode(String.self, forKey: .link)
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case name
+        case party
+        case link
+    }
+}
 
 struct SearchResponse: Codable {
     let results: [Representative]

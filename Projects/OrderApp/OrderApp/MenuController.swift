@@ -6,9 +6,22 @@
 //
 
 import Foundation
+import UIKit
 
 class MenuController {
-    let baseURL = URL(string: "https://localhost:8080")!
+    static let shared = MenuController()
+    static let orderUpdatedNotification = Notification.Name("MenuController.orderUpdated")
+    
+    var userActivity = NSUserActivity(activityType: "com.example.OrderApp.order")
+    
+    let baseURL = URL(string: "http://localhost:8080")!
+    
+    var order = Order() {
+        didSet {
+            NotificationCenter.default.post(name: MenuController.orderUpdatedNotification, object: nil)
+            userActivity.order = order
+        }
+    }
     
     
     func fetchCategories() async throws -> [String] {
@@ -75,5 +88,35 @@ class MenuController {
         case categoriesNotFound
         case menuItemsNotFound
         case orderRequestFailed
+        case imageDataMissing
     }
+    
+    func fetchImage(from url: URL) async throws -> UIImage {
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              httpResponse.statusCode == 200 else {
+            throw MenuControllerError.imageDataMissing
+        }
+        
+        guard let image = UIImage(data: data) else {
+            throw MenuControllerError.imageDataMissing
+        }
+        
+        return image
+    }
+    
+    func updateUserActivity(with controller: StateRestorationController) {
+        switch controller {
+        case .menu(let category):
+            userActivity.menuCategory = category
+        case .menuItemDetail(let menuItem):
+            userActivity.menuItem = menuItem
+        case .order, .categories:
+            break
+        }
+        
+        userActivity.controllerIdentifier = controller.identifier
+    }
+    
 }

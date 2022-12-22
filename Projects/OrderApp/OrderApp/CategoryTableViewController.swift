@@ -30,6 +30,11 @@ class CategoryTableViewController: UITableViewController {
             self.categories = categories
             self.tableView.reloadData()
         }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        MenuController.shared.updateUserActivity(with: .categories)
+    }
                                  
         func displayError(_ error: Error, title: String) {
             guard let _ = viewIfLoaded?.window else { return }

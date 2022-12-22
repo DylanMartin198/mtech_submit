@@ -16,7 +16,6 @@ class StoreItemController {
     
     func fetchItems(matching query: [String: String]) async throws -> [Representative] {
         var urlComponents = URLComponents(string: "https://whoismyrepresentative.com/getall_mems.php")!
-//    https://whoismyrepresentative.com/getall_mems.php?zip=31023&output=json
         
         urlComponents.queryItems = query.map { URLQueryItem(name: $0.key, value: $0.value) }
         

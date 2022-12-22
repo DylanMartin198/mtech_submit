@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A01CDBB2954A83600B1D438 /* Restoration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01CDBA2954A83600B1D438 /* Restoration.swift */; };
 		4A43365A295208A400179652 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A433659295208A400179652 /* AppDelegate.swift */; };
 		4A43365C295208A400179652 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43365B295208A400179652 /* SceneDelegate.swift */; };
 		4A433661295208A400179652 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A43365F295208A400179652 /* Main.storyboard */; };
@@ -21,9 +22,12 @@
 		4A43367B29520E7B00179652 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43367A29520E7B00179652 /* ResponseModels.swift */; };
 		4A43367D29520FA000179652 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43367C29520FA000179652 /* Order.swift */; };
 		4A43367F29520FE000179652 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43367E29520FE000179652 /* MenuController.swift */; };
+		4A433681295368A700179652 /* OrderConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A433680295368A700179652 /* OrderConfirmationViewController.swift */; };
+		4A43368329537C2500179652 /* MenuItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A43368229537C2500179652 /* MenuItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A01CDBA2954A83600B1D438 /* Restoration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restoration.swift; sourceTree = "<group>"; };
 		4A433656295208A400179652 /* OrderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A433659295208A400179652 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A43365B295208A400179652 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		4A43367A29520E7B00179652 /* ResponseModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModels.swift; sourceTree = "<group>"; };
 		4A43367C29520FA000179652 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		4A43367E29520FE000179652 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		4A433680295368A700179652 /* OrderConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderConfirmationViewController.swift; sourceTree = "<group>"; };
+		4A43368229537C2500179652 /* MenuItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +79,15 @@
 			isa = PBXGroup;
 			children = (
 				4A433659295208A400179652 /* AppDelegate.swift */,
+				4A43368229537C2500179652 /* MenuItemCell.swift */,
 				4A43365B295208A400179652 /* SceneDelegate.swift */,
 				4A43365F295208A400179652 /* Main.storyboard */,
+				4A01CDBA2954A83600B1D438 /* Restoration.swift */,
+				4A43367E29520FE000179652 /* MenuController.swift */,
+				4A433680295368A700179652 /* OrderConfirmationViewController.swift */,
 				4A43367829520E1100179652 /* MenuItem.swift */,
 				4A43367A29520E7B00179652 /* ResponseModels.swift */,
 				4A43367C29520FA000179652 /* Order.swift */,
-				4A43367E29520FE000179652 /* MenuController.swift */,
 				4A43367629520DA700179652 /* MenuItemDetailViewController.swift */,
 				4A43367029520C3900179652 /* CategoryTableViewController.swift */,
 				4A43367229520C5500179652 /* MenuTableViewController.swift */,
@@ -162,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A01CDBB2954A83600B1D438 /* Restoration.swift in Sources */,
 				4A43365A295208A400179652 /* AppDelegate.swift in Sources */,
 				4A433664295208A400179652 /* OrderApp.xcdatamodeld in Sources */,
 				4A43367D29520FA000179652 /* Order.swift in Sources */,
@@ -169,7 +179,9 @@
 				4A43367729520DA700179652 /* MenuItemDetailViewController.swift in Sources */,
 				4A43367F29520FE000179652 /* MenuController.swift in Sources */,
 				4A43365C295208A400179652 /* SceneDelegate.swift in Sources */,
+				4A43368329537C2500179652 /* MenuItemCell.swift in Sources */,
 				4A43367B29520E7B00179652 /* ResponseModels.swift in Sources */,
+				4A433681295368A700179652 /* OrderConfirmationViewController.swift in Sources */,
 				4A43367929520E1100179652 /* MenuItem.swift in Sources */,
 				4A43367529520C6400179652 /* OrderTableViewController.swift in Sources */,
 				4A43367129520C3900179652 /* CategoryTableViewController.swift in Sources */,

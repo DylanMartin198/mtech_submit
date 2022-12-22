@@ -30,13 +30,12 @@ class RepresentativeTableViewController: UITableViewController {
         let searchTerm = searchBar.text ?? ""
         
         if !searchTerm.isEmpty {
-            
+
             let query = [
-                "name": " ",
-                "party": " ",
-                "link": " "
+                "zip" : searchTerm,
+                "output" : "json"
             ]
-            
+
             Task {
                 do {
                     let items = try await storeItemController.fetchItems(matching: query)
@@ -49,12 +48,13 @@ class RepresentativeTableViewController: UITableViewController {
         }
     }
     
+    
     func configure(cell: RepresentativeTableViewCell, forItemAt indexPath: IndexPath) {
         
         let item = items[indexPath.row]
-//        cell.RepresentativeName = item.name
-//        cell.RepresentativeParty = item.party
-//        cell.RepresentativeLink = item.link
+        cell.RepresentativeName.text = item.name
+        cell.RepresentativeParty.text = item.party
+        cell.RepresentativeLink.text = item.link
         imageLoadTasks[indexPath] = Task {
             
         }
