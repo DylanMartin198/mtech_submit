@@ -38,7 +38,28 @@ final class NumberTests: XCTestCase {
         XCTAssert(numbers == [])
     }
     
+    // extra tests
     
+    func test_oddNum_MixedInput() {
+        let numbers = NumberController.oddNumbers(numbers: [1, 2, 3, 4])
+        XCTAssert(numbers == [1, 3])
+    }
+    
+    
+    func test_numberSum_ReturnSum() {
+        let numbers = NumberController.sumNumbers(numbers: [25, 100, 35, 15])
+        XCTAssert(numbers == 175)
+    }
+    
+    func test_numberSum_negativeNumbers() {
+        let numbers = NumberController.sumNumbers(numbers: [-34, 11, -12, 45])
+        XCTAssert(numbers == 10)
+    }
+    
+    
+    func test_numberSum_NoNumbers() {
+        XCTAssertNotNil(NumberController.sumNumbers(numbers: []))
+    }
     
 
     func testExample() throws {
