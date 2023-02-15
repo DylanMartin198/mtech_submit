@@ -2,8 +2,7 @@
 //  SceneDelegate.swift
 //  Life-FormSearch
 //
-//  Created by Dylan Martin on 1/20/23.
-//
+
 
 import UIKit
 

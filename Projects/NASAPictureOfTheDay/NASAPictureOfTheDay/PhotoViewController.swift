@@ -43,5 +43,13 @@ class PhotoViewController {
         let (data, response) = try await URLSession.shared.data(from:
            urlComponents!.url!)
         
+        guard let httpResponse = response as? HTTPURLResponse,
+                httpResponse.statusCode == 200 else {
+            throw PhotoInfoError.itemNotFound
+        }
+        
+        let jsonDecoder = JSONDecoder()
+        let photoInfo = try jsonDecoder.decode(PhotoInfo.self, from: data)
+        return(photoInfo)
     }
 }
